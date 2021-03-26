@@ -1,0 +1,128 @@
+colorInformation{
+	background-color: #FCD47C; /*Yellow*/
+	background-color: #88C152;
+	background-color: #678423;  /* Text Color*/
+	background-color: #0F2B27;
+	background-color: #874B0F; /* Header background color */
+	/*credit to colormind.io for help with the colors*/
+	/* colormind based on photo */
+	}
+/*  Defaluts for entrier page*/
+*,*::after,*::before{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/*  CSS variables or custom properties */
+:root{
+	--ff-primary: arial;
+	--ff-secondary: tahoma;
+	
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-yellow: #FCD47C; /*Yellow*/
+	--clr-lt-grn: #88C152;
+	--clr-dk-grn: #678423;  /* Text Color*/
+	--clr-dark: #0F2B27;
+	--clr-brown: #874B0F; /* Header background color */
+
+	--fs-h1: 1.75rem;
+	--fs-h2: 1.5rem;
+	--fs-h3: 1.1rem;
+	--fs-body: .8rem;
+
+	--bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+				0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+@media (min-width: 1000px){
+	:root{
+		--fs-h1: 2.5rem;
+		--fs-h2: 2rem;
+		--fs-h3: 1.25rem;
+		--fs-body: 1rem;
+		}
+}
+@media (min-width: 1400px){
+	:root{
+		--fs-h1: 3.5rem;
+		--fs-h2: 2.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/*   END CSS variables or custom properties */
+
+body{
+	background-color: var(--clr-yellow);
+	color: var(--clr-text);
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	line-height: 1.6;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+h1,h2,h3{
+	line-height: 1em;
+	text-align: center;
+}
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+header{
+	display: flex;
+	justify-content: center;
+	background-color: #874B0F;
+	background-position: center;
+	background-repeat: no-repeat;
+	width:100%
+}
+header img{
+	height: 200px;
+	width: auto;
+	margin: 1em 2em;
+}
+#title{
+	border-top: 3px solid #678423;
+	border-bottom: 6px solid #678423;
+	background-color: #FCD47C;
+	color: #678423;
+}
+#title h1{
+	margin: .3em 0;
+}
+
+#content{
+	display: relative;
+	justify-content: center;
+	background-image: url("../images/ws_background_small.png");
+ 	background-position-y: top;
+	background-position-x: center;
+	min-height: 1000px;
+	padding: 1em 0;
+}
+@media (min-width: 800px){
+	#content{
+		background-image: url("../images/ws_background_medium.png");
+	}
+}
+@media (min-width: 1800px){
+	#content{
+		background-image: url("../images/ws_background_large.png");
+	}
+}
+
+footer{
+	margin: 0 auto;
+	padding: 1.1em 2em;
+	width: 80%;
+	background-color: var(--clr-yellow);
+	border-radius: 20px;
+}

@@ -1,0 +1,50 @@
+
+
+
+#cards{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+}
+
+.threeDCard{
+	position: relative;
+	width: 160px;
+	height: 222px;
+	margin: 1em 2em;
+}
+.card{
+	position: relative;
+	/* background-color: var(--clr-yellow); */
+	height:100%;
+	width:100%;
+}
+
+
+.imgFront{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-origin: center;
+	transform: rotateY(0deg);
+	transition: 4s;
+	backface-visibility: hidden;
+}
+
+.imgBack{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transform-origin: center;
+	/*transform: rotate3d(0, 1, 0, 90deg);*/
+	transform: rotateY(180deg);
+	transition: 4s;
+	backface-visibility: hidden;
+}
+.card:hover .imgFront{
+	transform: rotateY(180deg);
+	/*transform: translate3d( 10px ,10px , 50%);*/
+}
+.card:hover .imgBack{
+	transform: rotateY(0deg);
+}

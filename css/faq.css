@@ -1,0 +1,27 @@
+.faqs{
+	width: 80%;
+	max-width: 800px;
+	margin: 2em auto;
+}
+.faq{
+	background-color: rgb(252,212,124,80%);
+	border-radius: 15px;
+}
+.question, .answer{
+	padding: .5em 1em;
+
+}
+.question{
+	background-color: var(--clr-yellow);
+	border-radius: 15px 15px 0 0;
+	font-size: var(--fs-h2);
+	font-weight: var(--fw-bold);
+	color: var(--clr-dk-grn);
+}
+.answer{
+	font-size: var(--fs-h3);
+}
+.answer ol{
+	padding: 1em;
+}
+

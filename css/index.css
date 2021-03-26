@@ -1,0 +1,107 @@
+
+#sports_list{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	list-style-type: none;
+}
+#sports_list li{
+	display: inline-block;
+	margin: 1em;
+}
+#sports_list li div{
+	width:350px;
+	height: 420px;
+	background-color: #FCD47C;
+	padding: 15px;
+	margin-top: 1em;
+	border: 1px solid var(--clr-brown);
+	border-radius: 10px;
+}
+#sports_list li div a{
+	position: relative;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	font-size: 2.5rem;
+	font-weight: 600;
+	color:#678423;
+}
+/************************************** CONTACT FORM ********************/
+#contact_form{
+	width: 380px;
+	margin: 50px auto;
+	border: 1px solid var(--clr-brown);
+	border-radius: 10px;
+	padding: 20px;
+	color: black;
+	background-color: var(--clr-yellow);
+}
+#contact_list{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#contact_list li{
+	display: block;
+	padding: 9px;
+	border: 1px solid var(--clr-brown);
+	background: #ffffff;
+	margin: 0 0 30px 0;
+	border-radius: 10px;
+}
+#contact_list li:last-child{
+	text-align: center;
+	background: none;
+	width: 200px;
+	margin: auto;
+	padding: 0;
+}
+#contact_list li label{
+	display: block;
+	float: left;
+	margin: -19px 0 0 0;
+	background: #ffffff;
+	height: 28px;
+	padding: 3px 10px;
+	font-size: 14px;
+	overflow: hidden;
+	border: 1px solid  var(--clr-brown);
+	border-radius: 10px;
+}
+#contact_list input, #contact_list textarea{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	background-color: #ffffff;
+}
+#contact_list li:last-child input{
+	border-radius: 10px;
+}
+#contact_list li span{
+	background-color: var(--clr-dk-grn);
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	overflow: hidden;
+	text-align: center;
+	font-size: 12px;
+	box-sizing: border-box;
+	border-radius: 0 0 10px 10px;
+}
+#sendComment{
+	cursor: pointer;
+}
+
+/**************   Smaller than 600 px  ************************/
+@media screen and (max-width: 450px){
+	#contact_form{
+		border: 0px solid  var(--clr-brown);
+	}
+}

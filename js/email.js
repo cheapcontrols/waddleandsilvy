@@ -5,7 +5,8 @@ function SEND_EMAIL(){
   AJAX_EMAIL.open('POST', 'php/email.php', true);
   AJAX_EMAIL.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   AJAX_EMAIL.onreadystatechange = SEND_EMAIL_RESPONSE;
-  if(document.querySelector("#contact_robot_code").value == "SIUc"){
+	console.log(document.querySelector("#contact_robot_code").value.toUpperCase());
+  if(document.querySelector("#contact_robot_code").value.toUpperCase() == "SIUC"){
     var postString = 'SEND_EMAIL=nothing';
         postString += "&contact_name=";
         postString += "FROM waddle and silvy dot com";
